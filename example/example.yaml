@@ -6,7 +6,7 @@ metadata:
     app: foo
 spec:
   containers:
-    image: traefik/whoami
+  - image: traefik/whoami
     name: foo-app
 ---
 kind: Service
@@ -28,7 +28,7 @@ metadata:
     app: bar
 spec:
   containers:
-    image: traefik/whoami
+  - image: traefik/whoami
     name: bar-app
 ---
 kind: Service
