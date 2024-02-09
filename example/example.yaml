@@ -6,11 +6,6 @@ metadata:
     app: foo
 spec:
   containers:
-  - command:
-    - /agnhost
-    - netexec
-    - --http-port
-    - "8080"
     image: traefik/whoami
     name: foo-app
 ---
@@ -33,11 +28,6 @@ metadata:
     app: bar
 spec:
   containers:
-  - command:
-    - /agnhost
-    - netexec
-    - --http-port
-    - "8080"
     image: traefik/whoami
     name: bar-app
 ---
