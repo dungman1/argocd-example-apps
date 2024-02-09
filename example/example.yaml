@@ -11,7 +11,7 @@ spec:
     - netexec
     - --http-port
     - "8080"
-    image: traefik/whoami:2.10
+    image: traefik/whoami
     name: foo-app
 ---
 kind: Service
@@ -38,7 +38,7 @@ spec:
     - netexec
     - --http-port
     - "8080"
-    image: traefik/whoami:2.10
+    image: traefik/whoami
     name: bar-app
 ---
 kind: Service
